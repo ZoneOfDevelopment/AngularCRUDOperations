@@ -1,0 +1,14 @@
+<form class="add-form" (ngSubmit)="onSubmit()">
+    <div class="form-control">
+        <label for="surname">Surname</label>
+        <input type="text" name="surname" id="surname" placeholder="Insert surname" [(ngModel)] = "surname" />
+    </div>
+    <div class="form-control">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Insert name" [(ngModel)] = "name" />
+    </div>
+    <div class="btn-group">
+        <input type="submit" value="Save User" class="btn" style="width: 110px;">
+        <a routerLink="/users" class="btn" [ngStyle]="{'background-color': 'red'}">Cancel</a>
+    </div>
+</form>
