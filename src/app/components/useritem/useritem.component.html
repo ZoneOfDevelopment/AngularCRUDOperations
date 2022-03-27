@@ -1,0 +1,6 @@
+<div class="user">
+    <h3>{{ user.surname }}</h3>
+    <p>{{ user.name }}</p>
+    <button class="btn" [ngStyle]="{'background-color': 'red'}" (click)="onDelete(user)" >Delete</button>
+    <button class="btn" [ngStyle]="{'background-color': 'orange'}" (click)="onUpdate(user)" >Update</button>
+</div>
